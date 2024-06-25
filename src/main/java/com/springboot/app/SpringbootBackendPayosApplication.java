@@ -12,11 +12,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class SpringbootBackendPayosApplication implements WebMvcConfigurer {
 
-	private String clientId = "6567e942-15db-48f9-9291-e02c5e46ff5a";
+	@Value("${PAYOS_CLIENT_ID}")
+	private String clientId;
 
-	private String apiKey = "6d502cdc-3944-4d0e-894c-d6cc1401c838";
+	@Value("${PAYOS_API_KEY}")
+	private String apiKey;
 
-	private String checksumKey = "aaf6543f7452540f08f226b89d6383dad7f3b1fef680cefb32fb953f0dbc741d";
+	@Value("${PAYOS_CHECKSUM_KEY}")
+	private String checksumKey;
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
 		registry.addMapping("/**")
