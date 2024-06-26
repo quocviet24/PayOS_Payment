@@ -1,11 +1,13 @@
+#### Instructions on the intelliJ Idea IDE
 #### Step 1: Download and install Java 17 and make sure you are running this project in Java 17 version
 Link: [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
-#### Step 2: Add payment gateway
-- Go to file src/resources/application.properties
-- Add values to PayOS payment gateway variables
+#### Step 2: Edit Configuration 
+- Go to edit configuration ( next to the run and debug buttons ) 
+- Add environment variables PayOS payment gateway
    - PAYOS_CLIENT_ID={Your Client Id}
    - PAYOS_API_KEY={Your Api Key}
    - PAYOS_CHECKSUM_KEY={Your Checksum Key}
+- Apply -> OK
 #### Step 3 Run the project
 - **Vs code**:
    - Need to install extensions Extension Pack for Java and Debugger for Java.
